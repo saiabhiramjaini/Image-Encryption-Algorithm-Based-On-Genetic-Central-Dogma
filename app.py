@@ -7,14 +7,9 @@ st.set_page_config(page_title="Image Encryption", page_icon="🔑", layout="wide
 
 
 
-
 with st.container():
-    left_column, right_column = st.columns((2, 1))
-    with left_column:
-        st.subheader("Hello User!!!")
-        st.title("Upload and encrypt your image")
-    with right_column:
-        st_lottie(lottie_animation, height=150)
+    st.subheader("Hello User!!!")
+    st.title("Upload and encrypt your image")
     st.write("---")
 
 
