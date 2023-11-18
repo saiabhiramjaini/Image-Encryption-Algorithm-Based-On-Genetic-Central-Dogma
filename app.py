@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Image Encryption", page_icon="🔑", layout="wide")
 
