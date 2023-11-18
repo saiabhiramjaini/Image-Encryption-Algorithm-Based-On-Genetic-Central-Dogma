@@ -1,19 +1,10 @@
 import streamlit as st
-import requests
-from streamlit_lottie import st_lottie
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Image Encryption", page_icon="🔑", layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_animation = load_lottieurl("https://lottie.host/7fb8dddb-7fe2-4e23-9007-e9ff888795a5/sJvysM9KMx.json")
 
 
 
