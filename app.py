@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-import matplotlib.pyplot as plt
+
 
 st.set_page_config(page_title="Image Encryption", page_icon="🔑", layout="wide")
 
@@ -27,7 +27,7 @@ if uploaded_file is not None:
 
         # Extract RGB values from the original image
         rgb_array = np.array(image)
-        plt.imshow(image)
+
         # Convert the RGB image to grayscale image
         gray_image = image.convert('L')
 
@@ -182,7 +182,7 @@ if uploaded_file is not None:
 
         # Extract RGB values from the original image
         rgb_array = np.array(image)
-        plt.imshow(image)
+
         # Convert the RGB image to grayscale image
         gray_image = image.convert('L')
 
