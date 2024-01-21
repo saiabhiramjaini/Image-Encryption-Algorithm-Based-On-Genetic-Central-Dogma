@@ -146,13 +146,13 @@ with st.container():
             # Stack all bit planes horizontally to form a 3D cube
             bit_cube = np.concatenate([bit_planes_3d[:, :, 7 - bit][:, :, np.newaxis] for bit in range(8)], axis=-1)
 
-            # Display each bit plane as a subplot
-            fig, axes = plt.subplots(1, 8, figsize=(20, 3))
+            # # Display each bit plane as a subplot
+            # fig, axes = plt.subplots(1, 8, figsize=(20, 3))
 
-            for i, ax in enumerate(axes):
-                ax.imshow(bit_cube[:, :, i], cmap='gray')
-                ax.set_title(f"Bit Plane {8 - i}")
-                ax.axis('off')
+            # for i, ax in enumerate(axes):
+            #     ax.imshow(bit_cube[:, :, i], cmap='gray')
+            #     ax.set_title(f"Bit Plane {8 - i}")
+            #     ax.axis('off')
 
             # Shuffle the binary values in the 3D matrix
             shuffled_bit_planes_3d = 1 - bit_planes_3d
@@ -497,13 +497,13 @@ with st.container():
             # Stack all bit planes horizontally to form a 3D cube
             bit_cube = np.concatenate([bit_planes_3d[:, :, 7 - bit][:, :, np.newaxis] for bit in range(8)], axis=-1)
 
-            # Display each bit plane as a subplot
-            fig, axes = plt.subplots(1, 8, figsize=(20, 3))
+            # # Display each bit plane as a subplot
+            # fig, axes = plt.subplots(1, 8, figsize=(20, 3))
 
-            for i, ax in enumerate(axes):
-                ax.imshow(bit_cube[:, :, i], cmap='gray')
-                ax.set_title(f"Bit Plane {8 - i}")
-                ax.axis('off')
+            # for i, ax in enumerate(axes):
+            #     ax.imshow(bit_cube[:, :, i], cmap='gray')
+            #     ax.set_title(f"Bit Plane {8 - i}")
+            #     ax.axis('off')
 
             # Shuffle the binary values in the 3D matrix
             shuffled_bit_planes_3d = 1 - bit_planes_3d
